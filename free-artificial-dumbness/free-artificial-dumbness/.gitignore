@@ -20,6 +20,14 @@ output.json
 # Keystore files
 *.jks
 *.keystore
+keystore.properties
+*.p12
+*.pem
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
 
 # External native build
 .externalNativeBuild/
@@ -34,6 +42,10 @@ Thumbs.db
 
 # Log files
 *.log
+
+# Generated release files
+*.apk
+*.aab
 
 # lint
 lint/intermediates/
