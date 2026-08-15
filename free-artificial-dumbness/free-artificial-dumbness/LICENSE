@@ -1,1 +1,39 @@
-TODO: Escolher licença (MIT ou Apache 2.0) e colocar aqui.
+# GNU GENERAL PUBLIC LICENSE
+
+Version 3, 29 June 2007
+
+Copyright (C) 2026 Tiago Duarte
+
+The **Free Artificial Dumbness** project is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+The **Free Artificial Dumbness** project is distributed in the hope that it will be useful, but **WITHOUT ANY WARRANTY**; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this project. If not, see <https://www.gnu.org/licenses/>.
+
+**SPDX-License-Identifier:** `GPL-3.0-or-later`
+
+## Aplicação desta licença
+
+Esta licença aplica-se ao código-fonte do projeto **Free Artificial Dumbness**, salvo indicação diferente num ficheiro específico.
+
+Qualquer pessoa pode usar, estudar, modificar e redistribuir o código nos termos da GPLv3 ou de qualquer versão posterior, desde que cumpra as obrigações dessa licença, incluindo a disponibilização do código-fonte correspondente quando distribuir versões modificadas.
+
+O projeto pode ser redistribuído gratuitamente ou mediante pagamento. A GPL não impede a cobrança por cópias, suporte, alojamento ou outros serviços. No entanto, a cobrança não pode retirar aos destinatários os direitos concedidos pela GPL.
+
+## Marca e identidade do projeto
+
+O nome **Free Artificial Dumbness**, os logótipos, ícones, elementos visuais e outros sinais distintivos do projeto não são licenciados pela GPLv3, salvo indicação expressa em contrário.
+
+A utilização do código GPL é permitida em forks e projetos derivados. Contudo, uma versão modificada não deve apresentar-se como a versão oficial do **Free Artificial Dumbness** nem utilizar a sua identidade visual de forma a sugerir apoio, autoria ou distribuição oficial sem autorização.
+
+## Política da versão oficial
+
+A intenção do projeto oficial é manter as funcionalidades principais disponíveis sem paywall e promover o desenvolvimento comunitário. Esta declaração descreve a política da versão oficial; não altera nem restringe os direitos concedidos pela GPLv3 a forks ou redistribuições conformes com essa licença.
+
+## Texto integral da licença
+
+O texto legal integral da GNU General Public License, versão 3, está disponível em:
+
+<https://www.gnu.org/licenses/gpl-3.0.html>
+
+Em caso de diferença entre este resumo e o texto integral da GPLv3, prevalece sempre o texto integral da GPLv3.
