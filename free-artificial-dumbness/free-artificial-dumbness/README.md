@@ -1,29 +1,29 @@
 # Free Artificial Dumbness
 
-Free Artificial Dumbness é uma aplicação para Android concebida para ajudar os utilizadores a reduzir a exposição indesejada a funcionalidades de Burrice Artificial (Chatsbots) integradas em aplicações de redes sociais de forma forçada Permite ao utilizador ativar ou desativar o bloqueio de forma independente para cada aplicação compatível.
+Free Artificial Dumbness is an Android application designed to help users reduce unwanted exposure to Artificial Dumbness features (Chatbots) integrated into social media apps.
 
-> Estado do repositório: esta documentação descreve a implementação local completa do Android que está a ser preparada para o projeto. O repositório do GitHub contém, neste momento, a estrutura inicial provisória, pelo que o código-fonte da aplicação deve ser sincronizado antes de se poder esperar que o projeto remoto seja compilado e funcione exatamente como aqui descrito.
+> Repository Status: This documentation describes the complete local Android implementation being prepared for the project. The GitHub repository currently contains the project structure and basic documentation.
 
-## Indice
+## Table of Contents
 
-- [Funcionalidades](#features)
-- [Como Funciona](#how-it-works)
-- [Requisitos](#requirements)
-- [Instalação](#installation)
-- [Capturas de Ecrã](#screenshots)
-- [Limitações Conhecidas](#known-limitations)
-- [Contribuição](#contributing)
-- [Privacidade](#privacy)
-- [Liçensa](#license)
+- [Features](#features)
+- [How It Works](#how-it-works)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
+- [Known Limitations](#known-limitations)
+- [Contributing](#contributing)
+- [Privacy](#privacy)
+- [License](#license)
 
-## Funcionalidades
+## Features
 
-A implementação local atual disponibiliza um botão de ativação/desativação independente para cada pacote suportado:
+The current local implementation provides an independent toggle button for each supported package:
 
 - WhatsApp (`com.whatsapp`): Meta AI search, shortcut and conversation surfaces.
 - Instagram (`com.instagram.android`): Meta AI surfaces, direct-message entry points and Support AI.
 
-A aplicação inclui ainda:
+The application also includes:
 
 - A status dashboard showing the Accessibility Service state.
 - Independent per-app toggles.
@@ -34,61 +34,60 @@ A aplicação inclui ainda:
 
 The implementation does not currently include iOS support, account synchronisation, cloud backup, configurable inspirational messages or a complete historical statistics dashboard.
 
-## Como Funciona
+## How It Works
 
-1. O utilizador ativa o Serviço de Acessibilidade do Android a partir das definições do sistema.
-2. O serviço monitoriza apenas os pacotes de aplicações suportados.
-3. Analisa a árvore de acessibilidade exposta pela janela ativa.
-4. O texto e as descrições são comparados com as regras ativadas para essa aplicação.
-5. Quando é detetada uma superfície de IA suportada, o serviço navega para trás.
-6. O resumo mais recente dos bloqueios e o registo de data e hora são armazenados localmente no dispositivo.
+1. The user enables the Android Accessibility Service from system settings.
+2. The service monitors only supported app packages.
+3. It analyzes the accessibility tree exposed by the active window.
+4. Text and descriptions are compared against the activated rules for that app.
+5. When a supported AI surface is detected, the service navigates back.
+6. The latest summary of blocks and timestamp are stored locally on the device.
 
-O serviço não automatiza gestos. Utiliza `GLOBAL_ACTION_BACK` quando é adequado recorrer a uma ação contextual de «voltar» e, nos restantes casos, apresenta a sobreposição definida em `app/src/main/res/layout/blocking_overlay.xml`.
+The service does not automate gestures. It uses `GLOBAL_ACTION_BACK` when it is appropriate to use a contextual "back" action and, in other cases, presents the overlay defined in the app configuration.
 
-## Requisitos
+## Requirements
 
 - Android Studio.
 - JDK 17.
-- Android SDK com a API 34 disponível.
-- Android 10 / API 29 ou mais recente.
-- A permissão do Serviço de Acessibilidade ativada no dispositivo de teste.
-- As aplicações de redes sociais compatíveis instaladas para testes em dispositivos reais.
+- Android SDK with API 34 available.
+- Android 10 / API 29 or newer.
+- Accessibility Service permission enabled on the test device.
+- Compatible social media apps installed for testing on real devices.
 
-A configuração local do Gradle utiliza o Kotlin 1.9.24, o Android Gradle Plugin 8.4.2, o SDK de compilação 34, o SDK de destino 34 e o SDK mínimo 29.
+The local Gradle configuration uses Kotlin 1.9.24, Android Gradle Plugin 8.4.2, Build SDK 34, Target SDK 34 and Minimum SDK 29.
 
-## Instalação
+## Installation
 
-1. Procure a Secção Downloads
-2. Baixe a última .apk
-3. Transfira a .apk usando Blip / Airdrop para o Telemóvel / Celular caso esteja no PC.
-3. Instale a .apk no Android
-4. Aceda as Definições da Aplicação & Ative Definições Restritas
-5. Ative o Serviço da Aplicação nas Definições de Acessibilidade
-6. Ative os Toogles que você deseja testar.
+1. Look for the Downloads Section
+2. Download the latest .apk
+3. Transfer the .apk using Blip / Airdrop to your Mobile/Cell phone if you are on PC.
+4. Install the .apk on Android
+5. Access Application Settings & Enable Restricted Settings
+6. Enable the Application Service in Accessibility Settings
+7. Enable the Toggles you wish to test.
 
-O serviço depende da árvore de acessibilidade disponibilizada por aplicações de terceiros. Teste cada regra com as versões exatas dessas aplicações que pretende suportar.
+The service depends on the accessibility tree provided by third-party applications. Test each rule with the exact versions of those applications you wish to support.
 
-## Capturas de Ecrã
+## Screenshots
 
-Serão adicionadas capturas de ecrã à pasta `assets/screenshots/` após a interface ter sido testada num dispositivo real. O conjunto previsto é o seguinte:
+Screenshots will be added to the `assets/screenshots/` folder after the interface has been tested on a real device. The planned set is as follows:
 
-Página inicial/painel de controlo com botões de ativação/desativação e atalho para as configurações de acessibilidade.
+Home page/control panel with toggle buttons and shortcut to accessibility settings.
 
-## Limitações Conhecidas
+## Known Limitations
 
-- A deteção é heurística e depende do texto, das descrições e da estrutura de visualização apresentados por cada aplicação alvo.
-- As aplicações de terceiros podem alterar as suas interfaces sem aviso prévio, o que poderá exigir novas regras ou heurísticas.
-- Atualmente, têm-se observado falhas no Serviço de Acessibilidade em dispositivos HyperOS. Os relatórios relativos a outras distribuições Android devem incluir detalhes completos sobre o dispositivo e o sistema operativo, para que possam ser investigados separadamente.
+- Detection is heuristic and depends on the text, descriptions and view structure presented by each target application.
+- Third-party applications may change their interfaces without notice, which may require new rules or heuristics.
+- Currently, failures in the Accessibility Service have been observed on HyperOS devices. Reports relating to other Android distributions should include complete details about the device and Android version.
 
+## Contributing
 
-## Contribuição
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
 
-Leia [CONTRIBUTING.md](CONTRIBUTING.md) antes de abrir um issue ou um pull request.
+## Privacy
 
-## Privacidade
+Read [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md). The current implementation prioritizes local use: it has no account system, backend, analytics SDK or network permissions.
 
-Leia [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md). A implementação atual privilegia o uso local: não possui sistema de contas, backend, SDK de análise nem autorizações de rede.
+## License
 
-## Licença
-
-A licença do repositório está definida em [LICENSE](LICENSE).
+The repository license is set out in [LICENSE](LICENSE).
