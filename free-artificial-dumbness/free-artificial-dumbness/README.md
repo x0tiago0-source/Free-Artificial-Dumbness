@@ -1,31 +1,29 @@
 # Free Artificial Dumbness
 
-Free Artificial Dumbness is an Android application designed to help users reduce unwanted exposure to artificial-intelligence features embedded in social-media apps. It lets the user enable or disable blocking independently for each supported app.
+Free Artificial Dumbness é uma aplicação para Android concebida para ajudar os utilizadores a reduzir a exposição indesejada a funcionalidades de Burrice Artificial (Chatsbots) integradas em aplicações de redes sociais de forma forçada Permite ao utilizador ativar ou desativar o bloqueio de forma independente para cada aplicação compatível.
 
-> Repository status: this documentation describes the complete local Android implementation being prepared for the project. The GitHub repository currently contains the initial structural placeholder, so the application source must be synchronized before the remote project is expected to build and behave exactly as described here.
+> Estado do repositório: esta documentação descreve a implementação local completa do Android que está a ser preparada para o projeto. O repositório do GitHub contém, neste momento, a estrutura inicial provisória, pelo que o código-fonte da aplicação deve ser sincronizado antes de se poder esperar que o projeto remoto seja compilado e funcione exatamente como aqui descrito.
 
-## Table of contents
+## Indice
 
-- [Features](#features)
-- [How it works](#how-it-works)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Screenshots](#screenshots)
-- [Known limitations](#known-limitations)
-- [Contributing](#contributing)
-- [Privacy](#privacy)
-- [License](#license)
+- [Funcionalidades](#features)
+- [Como Funciona](#how-it-works)
+- [Requisitos](#requirements)
+- [Instalação](#installation)
+- [Capturas de Ecrã](#screenshots)
+- [Limitações Conhecidas](#known-limitations)
+- [Contribuição](#contributing)
+- [Privacidade](#privacy)
+- [Liçensa](#license)
 
-## Features
+## Funcionalidades
 
-The current local implementation provides one independent toggle for each supported package:
+A implementação local atual disponibiliza um botão de ativação/desativação independente para cada pacote suportado:
 
 - WhatsApp (`com.whatsapp`): Meta AI search, shortcut and conversation surfaces.
 - Instagram (`com.instagram.android`): Meta AI surfaces, direct-message entry points and Support AI.
-- X/Twitter (`com.twitter.android`): Grok-related entry points.
-- Facebook (`com.facebook.katana`): Meta AI entry points in supported surfaces.
 
-The application also includes:
+A aplicação inclui ainda:
 
 - A status dashboard showing the Accessibility Service state.
 - Independent per-app toggles.
@@ -36,64 +34,61 @@ The application also includes:
 
 The implementation does not currently include iOS support, account synchronisation, cloud backup, configurable inspirational messages or a complete historical statistics dashboard.
 
-## How it works
+## Como Funciona
 
-1. The user enables the Android Accessibility Service from system settings.
-2. The service listens only to the supported app packages.
-3. It inspects the accessibility tree exposed by the active window.
-4. Text and descriptions are compared with the rules enabled for that app.
-5. When a supported AI surface is detected, the service either navigates back or shows a blocking overlay, depending on the interaction context.
-6. The latest block summary and timestamp are stored locally on the device.
+1. O utilizador ativa o Serviço de Acessibilidade do Android a partir das definições do sistema.
+2. O serviço monitoriza apenas os pacotes de aplicações suportados.
+3. Analisa a árvore de acessibilidade exposta pela janela ativa.
+4. O texto e as descrições são comparados com as regras ativadas para essa aplicação.
+5. Quando é detetada uma superfície de IA suportada, o serviço navega para trás.
+6. O resumo mais recente dos bloqueios e o registo de data e hora são armazenados localmente no dispositivo.
 
-The service does not automate gestures. It uses `GLOBAL_ACTION_BACK` where a contextual back action is appropriate and otherwise displays the overlay defined in `app/src/main/res/layout/blocking_overlay.xml`.
+O serviço não automatiza gestos. Utiliza `GLOBAL_ACTION_BACK` quando é adequado recorrer a uma ação contextual de «voltar» e, nos restantes casos, apresenta a sobreposição definida em `app/src/main/res/layout/blocking_overlay.xml`.
 
-## Requirements
+## Requisitos
 
 - Android Studio.
 - JDK 17.
-- Android SDK with API 34 available.
-- Android 10 / API 29 or newer.
-- The Accessibility Service permission enabled on the test device.
-- The supported social-media applications installed for real-device testing.
+- Android SDK com a API 34 disponível.
+- Android 10 / API 29 ou mais recente.
+- A permissão do Serviço de Acessibilidade ativada no dispositivo de teste.
+- As aplicações de redes sociais compatíveis instaladas para testes em dispositivos reais.
 
-The local Gradle configuration uses Kotlin 1.9.24, Android Gradle Plugin 8.4.2, compile SDK 34, target SDK 34 and minimum SDK 29.
+A configuração local do Gradle utiliza o Kotlin 1.9.24, o Android Gradle Plugin 8.4.2, o SDK de compilação 34, o SDK de destino 34 e o SDK mínimo 29.
 
-## Installation
+## Instalação
 
-1. Clone the repository.
-2. Open the Android project in Android Studio.
-3. Allow Gradle to synchronise the project.
-4. Connect an Android device or start an emulator running API 29 or newer.
-5. Build and install the debug variant.
-6. Open Free Artificial Dumbness and press **Activate accessibility**.
-7. Enable the service in Android Accessibility settings.
-8. Enable only the app toggles that you want to test.
+1. Procure a Secção Downloads
+2. Baixe a última .apk
+3. Transfira a .apk usando Blip / Airdrop para o Telemóvel / Celular caso esteja no PC.
+3. Instale a .apk no Android
+4. Aceda as Definições da Aplicação & Ative Definições Restritas
+5. Ative o Serviço da Aplicação nas Definições de Acessibilidade
+6. Ative os Toogles que você deseja testar.
 
-The service depends on the accessibility tree exposed by third-party applications. Test each rule against the exact versions of those applications that you intend to support.
+O serviço depende da árvore de acessibilidade disponibilizada por aplicações de terceiros. Teste cada regra com as versões exatas dessas aplicações que pretende suportar.
 
-## Screenshots
+## Capturas de Ecrã
 
-Screenshots will be added to `assets/screenshots/` after the interface is tested on a real device. The planned set is:
+Serão adicionadas capturas de ecrã à pasta `assets/screenshots/` após a interface ter sido testada num dispositivo real. O conjunto previsto é o seguinte:
 
-1. Home/dashboard with the service status.
-2. Independent app toggles.
-3. Blocking overlay.
+Página inicial/painel de controlo com botões de ativação/desativação e atalho para as configurações de acessibilidade.
 
-## Known limitations
+## Limitações Conhecidas
 
-- Detection is heuristic and depends on text, descriptions and view structure exposed by each target application.
-- Third-party applications can change their interfaces without notice, which may require new rules or heuristics.
-- Accessibility Service crashes have currently been observed on HyperOS devices. Reports from other Android distributions should include complete device and OS details so they can be investigated separately.
-- The repository source and the complete local implementation still need to be synchronised.
+- A deteção é heurística e depende do texto, das descrições e da estrutura de visualização apresentados por cada aplicação alvo.
+- As aplicações de terceiros podem alterar as suas interfaces sem aviso prévio, o que poderá exigir novas regras ou heurísticas.
+- Atualmente, têm-se observado falhas no Serviço de Acessibilidade em dispositivos HyperOS. Os relatórios relativos a outras distribuições Android devem incluir detalhes completos sobre o dispositivo e o sistema operativo, para que possam ser investigados separadamente.
 
-## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+## Contribuição
 
-## Privacy
+Leia [CONTRIBUTING.md](CONTRIBUTING.md) antes de abrir um issue ou um pull request.
 
-Read [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md). The current implementation is local-first: it has no account system, backend, analytics SDK or network permission.
+## Privacidade
 
-## License
+Leia [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md). A implementação atual privilegia o uso local: não possui sistema de contas, backend, SDK de análise nem autorizações de rede.
 
-The repository license is defined in [LICENSE](LICENSE).
+## Licença
+
+A licença do repositório está definida em [LICENSE](LICENSE).
