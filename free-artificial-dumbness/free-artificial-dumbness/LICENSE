@@ -1,8 +1,12 @@
 # GNU GENERAL PUBLIC LICENSE
 
-Version 3, 29 June 2007
+**Version 3, 29 June 2007**
 
-Copyright (C) 2026 Tiago Duarte
+**Copyright (C) 2026 Tiago Duarte**
+
+---
+
+## Overview
 
 The **Free Artificial Dumbness** project is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -12,28 +16,89 @@ You should have received a copy of the GNU General Public License along with thi
 
 **SPDX-License-Identifier:** `GPL-3.0-or-later`
 
-## Aplicação desta licença
+---
 
-Esta licença aplica-se ao código-fonte do projeto **Free Artificial Dumbness**, salvo indicação diferente num ficheiro específico.
+## Table of Contents
 
-Qualquer pessoa pode usar, estudar, modificar e redistribuir o código nos termos da GPLv3 ou de qualquer versão posterior, desde que cumpra as obrigações dessa licença, incluindo a disponibilização do código-fonte correspondente quando distribuir versões modificadas.
+- [License Scope](#license-scope)
+- [Commercial Use](#commercial-use)
+- [Trademark and Identity](#trademark-and-identity)
+- [Official Version Policy](#official-version-policy)
+- [Full License Text](#full-license-text)
 
-O projeto pode ser redistribuído gratuitamente ou mediante pagamento. A GPL não impede a cobrança por cópias, suporte, alojamento ou outros serviços. No entanto, a cobrança não pode retirar aos destinatários os direitos concedidos pela GPL.
+---
 
-## Marca e identidade do projeto
+## License Scope
 
-O nome **Free Artificial Dumbness**, os logótipos, ícones, elementos visuais e outros sinais distintivos do projeto não são licenciados pela GPLv3, salvo indicação expressa em contrário.
+This license applies to the source code of the **Free Artificial Dumbness** project, except where otherwise stated in a specific file.
 
-A utilização do código GPL é permitida em forks e projetos derivados. Contudo, uma versão modificada não deve apresentar-se como a versão oficial do **Free Artificial Dumbness** nem utilizar a sua identidade visual de forma a sugerir apoio, autoria ou distribuição oficial sem autorização.
+Anyone can use, study, modify and redistribute the code under the terms of GPLv3 or any later version, provided they comply with the obligations of that license, including the availability of the source code and the indication of changes made.
 
-## Política da versão oficial
+### Derivative Works
 
-A intenção do projeto oficial é manter as funcionalidades principais disponíveis sem paywall e promover o desenvolvimento comunitário. Esta declaração descreve a política da versão oficial; não altera nem restringe os direitos concedidos pela GPLv3 a forks ou redistribuições conformes com essa licença.
+If you create a modified version of this project, you must:
 
-## Texto integral da licença
+1. Clearly indicate that it is a modified version
+2. Make the source code available under GPLv3
+3. Document all changes made to the original code
+4. Preserve this license and copyright notices
 
-O texto legal integral da GNU General Public License, versão 3, está disponível em:
+---
+
+## Commercial Use
+
+The project can be redistributed for free or for a fee. The GPL does not prevent charging for copies, support, hosting or other services. However, the charge cannot remove the freedoms granted by the GPL.
+
+If you offer a commercial version or service based on this project, you must still:
+
+- Provide access to the source code
+- Allow users to modify and redistribute the code
+- Maintain the GPL license
+
+---
+
+## Trademark and Identity
+
+The name **Free Artificial Dumbness**, logos, icons, visual elements and other distinctive signs of the project are NOT licensed under GPLv3, unless expressly stated otherwise.
+
+The use of GPL code is permitted in forks and derived projects. However, a modified version should not present itself as the official version of **Free Artificial Dumbness** nor use official trademarks without permission.
+
+### Guidelines for Forks
+
+- Use a clearly different name for your fork
+- Remove official logos and branding
+- Indicate that it is a derivative work
+- Maintain the GPL license and attribution
+
+---
+
+## Official Version Policy
+
+The intention of the official project is to maintain core features available without paywall and promote community development.
+
+### Core Principles
+
+1. **Free and Open Source**: The official version will always be distributed under GPLv3
+2. **Community Driven**: Community contributions are welcomed and valued
+3. **Transparency**: All changes and decisions are documented
+4. **Attribution**: Original authors are properly credited
+
+---
+
+## Full License Text
+
+The complete legal text of the GNU General Public License, version 3, is available at:
 
 <https://www.gnu.org/licenses/gpl-3.0.html>
 
-Em caso de diferença entre este resumo e o texto integral da GPLv3, prevalece sempre o texto integral da GPLv3.
+If there is any difference between this summary and the full GPLv3 text, the full GPLv3 text always prevails.
+
+### Quick Links
+
+- [GPL-3.0 at FSF](https://www.gnu.org/licenses/gpl-3.0.html)
+- [GPL-3.0 at SPDX](https://spdx.org/licenses/GPL-3.0-or-later.html)
+- [Understanding GPL](https://www.gnu.org/licenses/gpl-faq.en.html)
+
+---
+
+**Last Updated:** September 2026
