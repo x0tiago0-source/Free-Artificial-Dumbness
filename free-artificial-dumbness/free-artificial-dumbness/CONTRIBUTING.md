@@ -1,6 +1,10 @@
 # Contributing to Free Artificial Dumbness
 
-Thank you for helping improve Free Artificial Dumbness. Contributions should keep the application local-first, transparent and focused on giving users control over unwanted AI surfaces in supported social-media apps.
+Thank you for helping improve Free Artificial Dumbness. Contributions should keep the application local-first, transparent and focused on giving users control over unwanted AI surfaces in supported social-media applications.
+
+**Before contributing, please review:**
+- [LICENSE.md](LICENSE.md) — Understand the GPL-3.0 license and your obligations when contributing
+- [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md) — Understand data handling and privacy requirements
 
 ## Before you start
 
@@ -28,7 +32,7 @@ Accessibility Service crashes are currently a known issue on HyperOS. Reports fr
 
 ## Suggesting a feature
 
-Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md). Explain the target app or surface, the problem for the user, the expected behaviour and how the feature should interact with the independent per-app toggle model.
+Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md). Explain the target app or surface, the problem for the user, the expected behaviour and how the feature should interact with other toggles and screens.
 
 ## Development workflow
 
@@ -68,3 +72,16 @@ Use short, imperative messages that describe the change, for example:
 - `Add Instagram Support AI detection rule`
 - `Fix overlay dismissal after blocked match`
 - `Document local privacy behaviour`
+
+## Guidelines for Derivative Works
+
+If you create a fork or modified version of this project:
+
+1. Clearly indicate that it is a modified version in the project name and documentation
+2. Make the source code available under GPL-3.0 or later
+3. Document all changes made to the original code
+4. Preserve this license and copyright notices
+5. Remove or clearly distinguish official logos and branding
+6. Do not present your fork as the official version of Free Artificial Dumbness
+
+For more details, see the Trademark and Identity section in [LICENSE.md](LICENSE.md).
