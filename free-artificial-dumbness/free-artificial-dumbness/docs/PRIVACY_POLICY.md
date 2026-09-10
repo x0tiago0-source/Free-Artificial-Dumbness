@@ -61,9 +61,9 @@ The Accessibility Service binding permission is used by Android to expose the se
 
 Local preferences remain on the device until the user clears the application data or uninstalls the application. No remote copy is created by the current implementation.
 
-## Children
+## Children & Teenagers
 
-The application is not specifically directed at children and does not intentionally collect personal information from children.
+The application is not specifically directed at children and does not intentionally collect personal information from children and teenagers.
 
 ## Changes to this policy
 
