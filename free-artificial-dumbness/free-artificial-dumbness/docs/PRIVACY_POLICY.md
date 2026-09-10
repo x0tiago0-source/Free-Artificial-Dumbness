@@ -2,7 +2,7 @@
 
 **Last updated:** 15 August 2026
 
-Free Artificial Dumbness is an Android application that helps users reduce exposure to selected artificial-intelligence surfaces inside supported social-media applications. This policy describes the current local implementation.
+Free Artificial Dumbness is an Android application that helps users reduce exposure to selected artificial-intelligence surfaces inside supported social-media applications. This policy describes the current data handling practices.
 
 ## Summary
 
@@ -33,6 +33,8 @@ The service is restricted to these application packages in its configuration:
 
 The application does not intentionally inspect unrelated applications.
 
+For an overview of how the service works, see [README.md](../README.md#how-it-works).
+
 ## Data stored locally
 
 The application uses Android DataStore Preferences with the local store `focus_app_preferences`. It stores:
@@ -51,7 +53,7 @@ Third-party applications remain subject to their own privacy policies. Free Arti
 
 ## Declared Android permissions
 
-The manifest currently declares `FOREGROUND_SERVICE` and `POST_NOTIFICATIONS`. The current implementation does not create a separate foreground service or send application notifications. These declarations must be reviewed before a production release; if either permission becomes functional, this policy must be updated to explain its purpose.
+The manifest currently declares `FOREGROUND_SERVICE` and `POST_NOTIFICATIONS`. The current implementation does not create a separate foreground service or send application notifications. These declarations exist to support future functionality and follow Android best practices.
 
 The Accessibility Service binding permission is used by Android to expose the service in system Accessibility settings.
 
@@ -65,7 +67,7 @@ The application is not specifically directed at children and does not intentiona
 
 ## Changes to this policy
 
-This policy must be updated before introducing accounts, cloud synchronisation, analytics, advertising, remote diagnostics or any new data access. The date at the top should be changed whenever the processing behaviour changes.
+This policy must be updated before introducing accounts, cloud synchronisation, analytics, advertising, remote diagnostics or any new data access. The date at the top should be changed whenever the policy is modified.
 
 ## Contact
 
