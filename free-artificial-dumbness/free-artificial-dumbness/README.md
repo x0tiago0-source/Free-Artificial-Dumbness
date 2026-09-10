@@ -13,7 +13,7 @@ Free Artificial Dumbness is an Android application designed to help users reduce
 - [Screenshots](#screenshots)
 - [Known Limitations](#known-limitations)
 - [Contributing](#contributing)
-- [Privacy](#privacy)
+- [Privacy & Data](#privacy--data)
 - [License](#license)
 
 ## Features
@@ -36,14 +36,18 @@ The implementation does not currently include iOS support, account synchronisati
 
 ## How It Works
 
-1. The user enables the Android Accessibility Service from system settings.
-2. The service monitors only supported app packages.
+The application uses Android's Accessibility Service to monitor and control AI surfaces:
+
+1. The user enables the Accessibility Service from system settings.
+2. The service monitors only supported app packages (WhatsApp, Instagram, Facebook, Twitter).
 3. It analyzes the accessibility tree exposed by the active window.
 4. Text and descriptions are compared against the activated rules for that app.
 5. When a supported AI surface is detected, the service navigates back.
 6. The latest summary of blocks and timestamp are stored locally on the device.
 
-The service does not automate gestures. It uses `GLOBAL_ACTION_BACK` when it is appropriate to use a contextual "back" action and, in other cases, presents the overlay defined in the app configuration.
+For technical details about how accessibility content is processed and data handling, see [Privacy Policy](docs/PRIVACY_POLICY.md).
+
+The service does not automate gestures. It uses `GLOBAL_ACTION_BACK` when appropriate or presents a local blocking overlay as configured.
 
 ## Requirements
 
@@ -84,10 +88,20 @@ Home page/control panel with toggle buttons and shortcut to accessibility settin
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
 
-## Privacy
+Contributions should keep the application local-first, transparent and focused on giving users control over unwanted AI surfaces.
 
-Read [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md). The current implementation prioritizes local use: it has no account system, backend, analytics SDK or network permissions.
+## Privacy & Data
+
+The current implementation prioritizes local use: it has no account system, backend, analytics SDK or network permissions.
+
+For complete information about data handling and privacy:
+- See [Privacy Policy](docs/PRIVACY_POLICY.md) for technical details.
+- See [Contributing Guidelines](CONTRIBUTING.md) for data handling requirements when contributing.
 
 ## License
 
-The repository license is set out in [LICENSE](LICENSE).
+This project is licensed under the GNU General Public License v3.0 or later.
+
+- Full license terms: [LICENSE.md](LICENSE.md)
+- Contributing to the project implies acceptance of the [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.html)
+- See also: [Understanding GPL](https://www.gnu.org/licenses/gpl-faq.en.html)
