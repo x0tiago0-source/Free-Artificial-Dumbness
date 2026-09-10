@@ -6,7 +6,7 @@ This roadmap follows the current application direction. Items are not promises o
 
 - Android application in Kotlin.
 - Jetpack Compose dashboard.
-- Full Minimalist Interface Independent toggles for WhatsApp, Instagram, Facebook, X/Twitter, Snapchat
+- Full Minimalist Interface Independent toggles for WhatsApp, Instagram, Facebook, X/Twitter, Snapchat, Threads
 - Full Interface with Tiitles, Icons and Shortcut for Acessibility Configurations
 - Accessibility-based detection rules.
 - Only Working Context-specific handling for Instagram and WhatsApp.
@@ -15,7 +15,7 @@ This roadmap follows the current application direction. Items are not promises o
 ## Next Android priorities
 
 - Synchronise the complete local implementation with the GitHub repository.
-- Create and test detection rules against Facebook, X/Twitter and Snapchat.
+- Create and test detection rules against Facebook, X/Twitter, and Threads
 - Add automated tests for acessibility working checking.
 - Add a stable, user-facing release build and signed APK process.
 
