@@ -32,22 +32,13 @@ You should have received a copy of the GNU General Public License along with thi
 
 This license applies to the source code of the **Free Artificial Dumbness** project, except where otherwise stated in a specific file.
 
-Anyone can use, study, modify and redistribute the code under the terms of GPLv3 or any later version, provided they comply with the obligations of that license, including the availability of the source code and the indication of changes made.
-
-### Derivative Works
-
-If you create a modified version of this project, you must:
-
-1. Clearly indicate that it is a modified version
-2. Make the source code available under GPLv3
-3. Document all changes made to the original code
-4. Preserve this license and copyright notices
+Anyone can use, study, modify and redistribute the code under the terms of GPLv3 or any later version, provided they comply with the obligations of that license, including the availability of the source code.
 
 ---
 
 ## Commercial Use
 
-The project can be redistributed for free or for a fee. The GPL does not prevent charging for copies, support, hosting or other services. However, the charge cannot remove the freedoms granted by the GPL.
+The project can be redistributed for free or for a fee. The GPL does not prevent charging for copies, support, hosting or other services. However, the charge cannot remove the freedoms granted by the license.
 
 If you offer a commercial version or service based on this project, you must still:
 
@@ -61,14 +52,9 @@ If you offer a commercial version or service based on this project, you must sti
 
 The name **Free Artificial Dumbness**, logos, icons, visual elements and other distinctive signs of the project are NOT licensed under GPLv3, unless expressly stated otherwise.
 
-The use of GPL code is permitted in forks and derived projects. However, a modified version should not present itself as the official version of **Free Artificial Dumbness** nor use official trademarks without permission.
+The use of GPL code is permitted in forks and derived projects. However, a modified version should not present itself as the official version of **Free Artificial Dumbness** nor use official trademarks.
 
-### Guidelines for Forks
-
-- Use a clearly different name for your fork
-- Remove official logos and branding
-- Indicate that it is a derivative work
-- Maintain the GPL license and attribution
+For detailed guidelines on creating derivative works and forks, see [CONTRIBUTING.md](CONTRIBUTING.md#guidelines-for-derivative-works).
 
 ---
 

@@ -24,12 +24,7 @@ The application requires the user to enable its Android Accessibility Service. T
 - display a local blocking overlay;
 - record the latest local block summary and timestamp.
 
-The service is restricted to these application packages in its configuration:
-
-- `com.whatsapp`;
-- `com.instagram.android`;
-- `com.facebook.katana`;
-- `com.twitter.android`.
+For a list of supported applications, see [README.md](../README.md#features).
 
 The application does not intentionally inspect unrelated applications.
 
@@ -61,9 +56,9 @@ The Accessibility Service binding permission is used by Android to expose the se
 
 Local preferences remain on the device until the user clears the application data or uninstalls the application. No remote copy is created by the current implementation.
 
-## Children & Teenagers
+## Children
 
-The application is not specifically directed at children and does not intentionally collect personal information from children and teenagers.
+The application is not specifically directed at children and does not intentionally collect personal information from children.
 
 ## Changes to this policy
 
