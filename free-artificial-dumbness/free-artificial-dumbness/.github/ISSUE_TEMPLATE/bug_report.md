@@ -13,7 +13,7 @@ Descreve de forma clara o que aconteceu.
 - Dispositivo:
 - Fabricante/modelo:
 - Versão Android:
-- Versão HyperOS (se aplicável):
+- Android skin ou distribuição (ex: One UI, HyperOS, MIUI, etc):
 - Versão da app Free Artificial Dumbness:
 - App alvo e versão:
 - Toggle activo:
@@ -32,9 +32,9 @@ Descreve de forma clara o que aconteceu.
 
 - O serviço estava activo? [ ] Sim [ ] Não
 - O problema envolve um crash do Accessibility Service? [ ] Sim [ ] Não
-- Se sim, ocorreu em HyperOS? [ ] Sim [ ] Não [ ] Não sei
+- Se sim, identifica a distribuição Android afectada.
 
-Crashes do Accessibility Service foram observados actualmente em HyperOS. Inclui a versão exacta do sistema para permitir comparação.
+Crashes do Accessibility Service podem variar consoante a distribuição Android utilizada. Inclui a versão exacta do sistema para permitir comparação entre diferentes plataformas.
 
 ## Evidência
 
