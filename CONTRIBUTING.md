@@ -1,6 +1,6 @@
 # Contributing to Free Artificial Dumbness
 
-Thank you for helping improve Free Artificial Dumbness. Contributions should keep the application local-first, transparent and focused on giving users control over unwanted AI surfaces in supported social-media applications.
+Thank you for helping improve Free Artificial Dumbness. Contributions should keep the application local-first, transparent and focused on giving users control over unwanted AI surfaces in supported apps.
 
 **Before contributing, please review:**
 - [LICENSE.md](LICENSE.md) — Understand the GPL-3.0 license and your obligations when contributing
@@ -20,7 +20,7 @@ Use the [bug report template](.github/ISSUE_TEMPLATE/bug_report.md). Include:
 
 - Device manufacturer and model.
 - Android version.
-- HyperOS version, if applicable.
+- Android skin or distribution (e.g., One UI, HyperOS, MIUI, etc.).
 - Application version and build variant.
 - Target social-media app and its version.
 - Relevant Free Artificial Dumbness toggle.
@@ -28,11 +28,11 @@ Use the [bug report template](.github/ISSUE_TEMPLATE/bug_report.md). Include:
 - Expected and observed results.
 - Screenshots or redacted logs when they do not contain private information.
 
-Accessibility Service crashes are currently a known issue on HyperOS. Reports from other devices are still valuable because they help determine whether the same failure occurs outside HyperOS.
+**Note:** Accessibility Service issues may vary across different Android skins and distributions. Reports from all devices are valuable and help us identify whether issues are device-specific or affect multiple platforms.
 
 ## Suggesting a feature
 
-Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md). Explain the target app or surface, the problem for the user, the expected behaviour and how the feature should interact with other toggles and screens.
+Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md). Explain the target app or surface, the problem for the user, the expected behaviour and how the feature should interact with existing toggles.
 
 ## Development workflow
 
